@@ -14,12 +14,360 @@ npm install --save react-multiselect-checkbox
 
 ```jsx
 import React, { Component } from "react";
-
-import MyComponent from "react-multiselect-checkbox";
+import MultiselectCheckbox from "react-multiselect-checkbox";
 
 class Example extends Component {
   render() {
-    return <MyComponent />;
+    return (
+      <div className="table-container">
+        <table className="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>NAME</th>
+              <th>SURNAME</th>
+              <th>
+                <MultiselectCheckbox
+                  checkboxes=".table .select-checkbox"
+                  sync=".table .row"
+                  onNotAllChecked={() => {
+                    console.log("Not all checked");
+                  }}
+                  onAllChecked={() => {
+                    console.log("All checked");
+                  }}
+                  onAllUnchecked={() => {
+                    console.log("All unchecked");
+                  }}
+                />
+              </th>
+            </tr>
+          </thead>
+          <tbody className="table-body">
+            <tr className="row">
+              <td>1</td>
+              <td>John</td>
+              <td>Richardson</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>2</td>
+              <td>Terry</td>
+              <td>Mitchell</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>3</td>
+              <td>Emma</td>
+              <td>Moore</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>4</td>
+              <td>Larry</td>
+              <td>Young</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>5</td>
+              <td>Amanda</td>
+              <td>Walker</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>6</td>
+              <td>Sara</td>
+              <td>Sullivan</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>7</td>
+              <td>Tommy</td>
+              <td>Green</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>8</td>
+              <td>Scott</td>
+              <td>Reyes</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>9</td>
+              <td>Raimond</td>
+              <td>Reed</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>10</td>
+              <td>Sam</td>
+              <td>Parker</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>11</td>
+              <td>Peter</td>
+              <td>Ortiz</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>12</td>
+              <td>Olivia</td>
+              <td>Garden</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>13</td>
+              <td>Ava</td>
+              <td>Mayer</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>14</td>
+              <td>John</td>
+              <td>Robinson</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>15</td>
+              <td>Amelia</td>
+              <td>Simpson</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>16</td>
+              <td>Charlotte</td>
+              <td>Martinez</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>17</td>
+              <td>Sophia</td>
+              <td>Jones</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>18</td>
+              <td>Alfred</td>
+              <td>Jackson</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>19</td>
+              <td>Albert</td>
+              <td>Hill</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>20</td>
+              <td>Howard</td>
+              <td>Foster</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>21</td>
+              <td>Evelyn</td>
+              <td>Evans</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>22</td>
+              <td>Richard</td>
+              <td>Davis</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>23</td>
+              <td>Jim</td>
+              <td>Brown</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>24</td>
+              <td>Emily</td>
+              <td>Campbell</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>25</td>
+              <td>Ester</td>
+              <td>González</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>26</td>
+              <td>Charlotte</td>
+              <td>De La Rosa</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>27</td>
+              <td>Michael</td>
+              <td>Wells</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>28</td>
+              <td>Mila</td>
+              <td>Young</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>29</td>
+              <td>Kevin</td>
+              <td>Harris</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>30</td>
+              <td>Hannah</td>
+              <td>Gray</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>31</td>
+              <td>Clark</td>
+              <td>Wayne</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>32</td>
+              <td>Ellie</td>
+              <td>Fisher</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>33</td>
+              <td>Paul</td>
+              <td>Phillips</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>34</td>
+              <td>Anthony</td>
+              <td>Wright</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>35</td>
+              <td>Adam</td>
+              <td>Baker</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>36</td>
+              <td>Samantha</td>
+              <td>Morris</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>37</td>
+              <td>Peter</td>
+              <td>Collins</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>38</td>
+              <td>Lily</td>
+              <td>Sweet</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>39</td>
+              <td>Justin</td>
+              <td>Cook</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>40</td>
+              <td>Tim</td>
+              <td>Bell</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="1" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    );
   }
 }
 ```

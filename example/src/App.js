@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import MultiselectCheckbox from "react-multiselect-checkbox";
 
 export default class App extends Component {
