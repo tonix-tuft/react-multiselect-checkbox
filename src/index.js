@@ -31,7 +31,7 @@ import "jquery-multiselect-checkbox";
 const MultiselectCheckbox = function MultiselectCheckbox({
   children,
   checkedClassName = "multiselectCheckboxChecked",
-  checkedIdDataAttributeName = "multiselectCheckboxCheckedId",
+  checkedKeyDataAttributeName = "multiselect-checkbox-checked-key",
   ...rest
 } = {}) {
   const ref = useRef(null);
@@ -40,13 +40,13 @@ const MultiselectCheckbox = function MultiselectCheckbox({
     const $children = $(ref.current).children();
     $children.multiselectCheckbox({
       checkedClassName,
-      checkedIdDataAttributeName,
+      checkedKeyDataAttributeName,
       ...rest
     });
     return () => {
       $children.multiselectCheckbox("destroy");
     };
-  }, [checkedClassName, checkedIdDataAttributeName, rest]);
+  }, [checkedClassName, checkedKeyDataAttributeName, rest]);
   return <div ref={ref}>{children || <input type="checkbox" />}</div>;
 };
 MultiselectCheckbox.displayName = "MultiselectCheckbox";

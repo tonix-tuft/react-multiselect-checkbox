@@ -95,7 +95,7 @@
   ],
   "dependencies": {
     "jquery": "^3.4.1",
-    "jquery-multiselect-checkbox": "^2.1.0",
-    "react-js-utl": "^1.37.0"
+    "jquery-multiselect-checkbox": "^3.0.0",
+    "react-js-utl": "^1.37.3"
   }
 }

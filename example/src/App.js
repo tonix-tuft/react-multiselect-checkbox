@@ -15,17 +15,17 @@ export default class App extends Component {
                 <MultiselectCheckbox
                   checkboxes=".table .select-checkbox"
                   sync=".table .row"
-                  onNotAllChecked={() => {
+                  onNotAllChecked={selectedMap => {
                     // eslint-disable-next-line no-console
-                    console.log("Not all checked");
+                    console.log("Not all checked", selectedMap.orderedByI());
                   }}
-                  onAllChecked={() => {
+                  onAllChecked={selectedMap => {
                     // eslint-disable-next-line no-console
-                    console.log("All checked");
+                    console.log("All checked", selectedMap.orderedByI());
                   }}
-                  onAllUnchecked={() => {
+                  onAllUnchecked={selectedMap => {
                     // eslint-disable-next-line no-console
-                    console.log("All unchecked");
+                    console.log("All unchecked", selectedMap.orderedByI());
                   }}
                 />
               </th>
@@ -45,7 +45,7 @@ export default class App extends Component {
               <td>Terry</td>
               <td>Mitchell</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="2" />
               </td>
             </tr>
             <tr className="row">
@@ -53,7 +53,7 @@ export default class App extends Component {
               <td>Emma</td>
               <td>Moore</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="3" />
               </td>
             </tr>
             <tr className="row">
@@ -61,7 +61,7 @@ export default class App extends Component {
               <td>Larry</td>
               <td>Young</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="4" />
               </td>
             </tr>
             <tr className="row">
@@ -69,7 +69,7 @@ export default class App extends Component {
               <td>Amanda</td>
               <td>Walker</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="5" />
               </td>
             </tr>
             <tr className="row">
@@ -77,7 +77,7 @@ export default class App extends Component {
               <td>Sara</td>
               <td>Sullivan</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="6" />
               </td>
             </tr>
             <tr className="row">
@@ -85,7 +85,7 @@ export default class App extends Component {
               <td>Tommy</td>
               <td>Green</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="7" />
               </td>
             </tr>
             <tr className="row">
@@ -93,7 +93,7 @@ export default class App extends Component {
               <td>Scott</td>
               <td>Reyes</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="8" />
               </td>
             </tr>
             <tr className="row">
@@ -101,7 +101,7 @@ export default class App extends Component {
               <td>Raimond</td>
               <td>Reed</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="9" />
               </td>
             </tr>
             <tr className="row">
@@ -109,7 +109,7 @@ export default class App extends Component {
               <td>Sam</td>
               <td>Parker</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="10" />
               </td>
             </tr>
             <tr className="row">
@@ -117,7 +117,7 @@ export default class App extends Component {
               <td>Peter</td>
               <td>Ortiz</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="11" />
               </td>
             </tr>
             <tr className="row">
@@ -125,7 +125,7 @@ export default class App extends Component {
               <td>Olivia</td>
               <td>Garden</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="12" />
               </td>
             </tr>
             <tr className="row">
@@ -133,7 +133,7 @@ export default class App extends Component {
               <td>Ava</td>
               <td>Mayer</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="13" />
               </td>
             </tr>
             <tr className="row">
@@ -141,7 +141,7 @@ export default class App extends Component {
               <td>John</td>
               <td>Robinson</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="14" />
               </td>
             </tr>
             <tr className="row">
@@ -149,7 +149,7 @@ export default class App extends Component {
               <td>Amelia</td>
               <td>Simpson</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="15" />
               </td>
             </tr>
             <tr className="row">
@@ -157,7 +157,7 @@ export default class App extends Component {
               <td>Charlotte</td>
               <td>Martinez</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="16" />
               </td>
             </tr>
             <tr className="row">
@@ -165,7 +165,7 @@ export default class App extends Component {
               <td>Sophia</td>
               <td>Jones</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="17" />
               </td>
             </tr>
             <tr className="row">
@@ -173,7 +173,7 @@ export default class App extends Component {
               <td>Alfred</td>
               <td>Jackson</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="18" />
               </td>
             </tr>
             <tr className="row">
@@ -181,7 +181,7 @@ export default class App extends Component {
               <td>Albert</td>
               <td>Hill</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="19" />
               </td>
             </tr>
             <tr className="row">
@@ -189,7 +189,7 @@ export default class App extends Component {
               <td>Howard</td>
               <td>Foster</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="20" />
               </td>
             </tr>
             <tr className="row">
@@ -197,7 +197,7 @@ export default class App extends Component {
               <td>Evelyn</td>
               <td>Evans</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="21" />
               </td>
             </tr>
             <tr className="row">
@@ -205,7 +205,7 @@ export default class App extends Component {
               <td>Richard</td>
               <td>Davis</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="22" />
               </td>
             </tr>
             <tr className="row">
@@ -213,7 +213,7 @@ export default class App extends Component {
               <td>Jim</td>
               <td>Brown</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="23" />
               </td>
             </tr>
             <tr className="row">
@@ -221,7 +221,7 @@ export default class App extends Component {
               <td>Emily</td>
               <td>Campbell</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="24" />
               </td>
             </tr>
             <tr className="row">
@@ -229,7 +229,7 @@ export default class App extends Component {
               <td>Ester</td>
               <td>González</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="25" />
               </td>
             </tr>
             <tr className="row">
@@ -237,7 +237,7 @@ export default class App extends Component {
               <td>Charlotte</td>
               <td>De La Rosa</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="26" />
               </td>
             </tr>
             <tr className="row">
@@ -245,7 +245,7 @@ export default class App extends Component {
               <td>Michael</td>
               <td>Wells</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="27" />
               </td>
             </tr>
             <tr className="row">
@@ -253,7 +253,7 @@ export default class App extends Component {
               <td>Mila</td>
               <td>Young</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="28" />
               </td>
             </tr>
             <tr className="row">
@@ -261,7 +261,7 @@ export default class App extends Component {
               <td>Kevin</td>
               <td>Harris</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="29" />
               </td>
             </tr>
             <tr className="row">
@@ -269,7 +269,7 @@ export default class App extends Component {
               <td>Hannah</td>
               <td>Gray</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="30" />
               </td>
             </tr>
             <tr className="row">
@@ -277,7 +277,7 @@ export default class App extends Component {
               <td>Clark</td>
               <td>Wayne</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="31" />
               </td>
             </tr>
             <tr className="row">
@@ -285,7 +285,7 @@ export default class App extends Component {
               <td>Ellie</td>
               <td>Fisher</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="32" />
               </td>
             </tr>
             <tr className="row">
@@ -293,7 +293,7 @@ export default class App extends Component {
               <td>Paul</td>
               <td>Phillips</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="33" />
               </td>
             </tr>
             <tr className="row">
@@ -301,7 +301,7 @@ export default class App extends Component {
               <td>Anthony</td>
               <td>Wright</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="34" />
               </td>
             </tr>
             <tr className="row">
@@ -309,7 +309,7 @@ export default class App extends Component {
               <td>Adam</td>
               <td>Baker</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="35" />
               </td>
             </tr>
             <tr className="row">
@@ -317,7 +317,7 @@ export default class App extends Component {
               <td>Samantha</td>
               <td>Morris</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="36" />
               </td>
             </tr>
             <tr className="row">
@@ -325,7 +325,7 @@ export default class App extends Component {
               <td>Peter</td>
               <td>Collins</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="37" />
               </td>
             </tr>
             <tr className="row">
@@ -333,7 +333,7 @@ export default class App extends Component {
               <td>Lily</td>
               <td>Sweet</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="38" />
               </td>
             </tr>
             <tr className="row">
@@ -341,7 +341,7 @@ export default class App extends Component {
               <td>Justin</td>
               <td>Cook</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="39" />
               </td>
             </tr>
             <tr className="row">
@@ -349,7 +349,87 @@ export default class App extends Component {
               <td>Tim</td>
               <td>Bell</td>
               <td>
-                <input type="checkbox" className="select-checkbox" value="1" />
+                <input type="checkbox" className="select-checkbox" value="40" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>41</td>
+              <td>Tom</td>
+              <td>Clancy</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="41" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>42</td>
+              <td>Frederique</td>
+              <td>Darragon</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="42" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>43</td>
+              <td>Jules</td>
+              <td>Vern</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="43" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>44</td>
+              <td>Amelia</td>
+              <td>Simpson</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="44" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>45</td>
+              <td>Mary</td>
+              <td>Hold</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="45" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>46</td>
+              <td>Valentino</td>
+              <td>Rossi</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="46" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>47</td>
+              <td>Peter</td>
+              <td>Thrive</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="47" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>48</td>
+              <td>Patrick</td>
+              <td>Jamison</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="48" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>49</td>
+              <td>Albert</td>
+              <td>Collins</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="49" />
+              </td>
+            </tr>
+            <tr className="row">
+              <td>50</td>
+              <td>John</td>
+              <td>McKenty</td>
+              <td>
+                <input type="checkbox" className="select-checkbox" value="50" />
               </td>
             </tr>
           </tbody>
