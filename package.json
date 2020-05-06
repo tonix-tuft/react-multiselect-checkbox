@@ -1,6 +1,6 @@
 {
   "name": "react-multiselect-checkbox",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "A React component implementing multiple selection for checkbox inputs as well as other DOM elements.",
   "author": "Anton Bagdatyev (Tonix)",
   "license": "MIT",
