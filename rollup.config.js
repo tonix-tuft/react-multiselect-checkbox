@@ -14,27 +14,28 @@ export default {
     {
       file: pkg.main,
       format: "cjs",
-      sourcemap: true
+      sourcemap: true,
     },
     {
       file: pkg.module,
       format: "es",
-      sourcemap: true
-    }
+      sourcemap: true,
+    },
   ],
+  external: ["prop-types"],
   plugins: [
     external(),
     postcss({
-      modules: true
+      modules: true,
     }),
     url(),
     svgr(),
     babel({
       exclude: "node_modules/**",
       runtimeHelpers: true,
-      plugins: [["@babel/transform-runtime"]]
+      plugins: [["@babel/transform-runtime"]],
     }),
     resolve(),
-    commonjs()
-  ]
+    commonjs(),
+  ],
 };
