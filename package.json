@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.0",
+    "@babel/core": "^7.9.6",
     "@babel/plugin-external-helpers": "^7.7.4",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/plugin-proposal-decorators": "^7.7.4",
@@ -59,11 +59,11 @@
     "@babel/plugin-proposal-throw-expressions": "^7.7.4",
     "@babel/plugin-syntax-dynamic-import": "^7.7.4",
     "@babel/plugin-syntax-import-meta": "^7.7.4",
-    "@babel/plugin-transform-runtime": "^7.9.0",
-    "@babel/preset-env": "^7.9.5",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
-    "@rollup/plugin-commonjs": "^11.0.2",
-    "@rollup/plugin-node-resolve": "^7.1.1",
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "@rollup/plugin-node-resolve": "^7.1.3",
     "@rollup/plugin-url": "^4.0.2",
     "@svgr/rollup": "^4.3.3",
     "babel-eslint": "10.1.0",
@@ -79,23 +79,23 @@
     "eslint-plugin-react-hooks": "^2.5.1",
     "eslint-plugin-standard": "^4.0.1",
     "gh-pages": "^2.1.1",
-    "onchange": "^6.1.0",
+    "onchange": "^6.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1",
     "rollup": "^1.32.1",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
-    "rollup-plugin-postcss": "^2.5.0",
+    "rollup-plugin-postcss": "^2.9.0",
     "typescript": "^3.7.4"
   },
   "files": [
     "dist"
   ],
   "dependencies": {
+    "jquery": "^3.5.1",
+    "jquery-multiselect-checkbox": "^3.3.0",
     "prop-types": "^15.7.2",
-    "jquery": "^3.4.1",
-    "jquery-multiselect-checkbox": "^3.0.0",
-    "react-js-utl": "^1.37.3"
+    "react-js-utl": "^1.45.0"
   }
 }
