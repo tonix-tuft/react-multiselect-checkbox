@@ -87,7 +87,7 @@
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^2.9.0",
-    "typescript": "^3.9.2"
+    "typescript": "^3.9.3"
   },
   "files": [
     "dist"
@@ -96,6 +96,6 @@
     "jquery": "^3.5.1",
     "jquery-multiselect-checkbox": "^3.3.0",
     "prop-types": "^15.7.2",
-    "react-js-utl": "^1.46.2"
+    "react-js-utl": "^1.47.2"
   }
 }
